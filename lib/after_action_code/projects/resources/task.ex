@@ -27,7 +27,7 @@ defmodule AfterActionCode.Projects.Task do
             IO.inspect(record)
              results =
                AfterActionCode.Activities.log(
-                 changeset.action,
+                 changeset.action.name,
                  "Task",
                  record.id,
                  %{title: record.title}
